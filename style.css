@@ -1,0 +1,44 @@
+.container{
+  padding: 20px;
+}
+.control-panel{
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.control-panel input{
+  opacity: 0;
+  cursor: pointer;
+}
+.custom-radio{
+  position: absolute;
+  top: 2.5px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgb(110, 110, 110);
+  background: #fff;
+  border-radius: 50%;
+}
+.custom-radio:hover{
+  border: 1px solid #3f424293;
+}
+.control-panel input:checked ~ .custom-radio{
+  border: 1px solid #00b894;
+  background-color: #fff;
+}
+.custom-radio:after{
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00b894;
+  content: "";
+  display: none;
+}
+.control-panel input:checked ~.custom-radio:after{
+  display: block;
+}
