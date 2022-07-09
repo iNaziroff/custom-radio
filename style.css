@@ -7,10 +7,10 @@
   padding-left: 25px;
   cursor: pointer;
 }
-/* .control-panel input{
+.control-panel input{
   opacity: 0;
   cursor: pointer;
-} */
+}
 .custom-radio{
   position: absolute;
   top: 2.5px;
