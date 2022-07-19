@@ -2,10 +2,15 @@
   padding: 20px;
 }
 .control-panel{
-  display: block;
+  display: inline-block;
   position: relative;
   padding-left: 25px;
   cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+.control-panel:hover{
+  background-color: #00b89346;
 }
 .control-panel input{
   opacity: 0;
@@ -20,9 +25,6 @@
   border: 1px solid rgb(110, 110, 110);
   background: #fff;
   border-radius: 50%;
-}
-.custom-radio:hover{
-  border: 1px solid #3f424293;
 }
 .control-panel input:checked ~ .custom-radio{
   border: 1px solid #00b894;
